@@ -24,7 +24,7 @@ Using `irb`
  => true
 2.6.0 :002 > monster_scraper = MonsterScraper.new
  => #<MonsterScraper:0x00007fa23b05e7d8 @url="https://roll20.net/compendium/dnd5e/Monsters%20List#content", @monsters=[]>
-2.6.0 :003 > monster_scraper.return_monsters`
+2.6.0 :003 > monster_scraper.return_monsters
  => [{:name=>"Aboleth"}, {:name=>"Acolyte"}, {:name=>"Adult Black Dragon"}, {:name=>"Adult Blue Dragon"}, {:name=>"Adult Brass Dragon"}, {:name=>"Adult Bronze Dragon"} etc etc
 ```
 
