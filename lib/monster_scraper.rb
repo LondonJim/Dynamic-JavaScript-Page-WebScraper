@@ -24,7 +24,6 @@ class MonsterScraper
     unparsed_page = Watir::Browser.new(:chrome, headless: true)
     unparsed_page.goto @url
     Watir::Wait.until { unparsed_page.text.include? 'Aboleth'} # first monster
-    puts "DONE"
     parse_page = Nokogiri::HTML.parse(unparsed_page.html)
     parse_page.css('div.listResult.booktemplate.closed.list')
   end
