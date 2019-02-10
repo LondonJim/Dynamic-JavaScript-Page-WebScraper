@@ -20,6 +20,8 @@ class MonsterScraper
     @monsters
   end
 
+  private
+  
   def get_page_info
     unparsed_page = Watir::Browser.new(:chrome, headless: true)
     unparsed_page.goto @url
