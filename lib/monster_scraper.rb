@@ -24,7 +24,7 @@ class MonsterScraper
     unparsed_page = Watir::Browser.new(:chrome, headless: true)
     unparsed_page.goto @url
     Watir::Wait.until(timeout: 10) { unparsed_page.div(:class => ["listResult",
-      "booktemplate", "closed", "list"]).exists? } # first monster
+      "booktemplate", "closed", "list"]).exists? }
     parse_page = Nokogiri::HTML.parse(unparsed_page.html)
     parse_page.css('div.listResult.booktemplate.closed.list')
   end
